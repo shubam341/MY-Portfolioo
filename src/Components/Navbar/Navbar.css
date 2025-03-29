@@ -1,0 +1,125 @@
+.navbar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    position: relative;
+    width: 100%;
+    background: var(--color-ui-1);
+    z-index: 100;
+    color: white;
+}
+
+.navbar__container.visible{
+    background: var(--color-ui-2);
+    position: sticky;
+}
+
+ .navbar__container .logo__container {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    font-size: 35px;
+}
+
+.navbar__container .tab__group {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tab__item {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-text);
+}
+
+.navbar__container .tab__item.active::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: var(--gradient-1);
+    border-radius: var(--border-radius-4);
+    animation: drawer .5s;
+}
+
+.nav__buttons__group {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu {
+    font-size: 25px;
+    cursor: pointer;
+    display: none;
+    color: var(--color-text);
+}
+
+.close__btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    z-index: 2;
+    font-size: 16px;
+    display: none;
+    color: var(--color-text);
+}
+
+.overlay {
+    background: rgba(1,1,1,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 199;
+    user-select: none;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: var(--transition);
+}
+
+.overlay.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+@media (max-width: 900px) {
+    .navbar__container .tab__group {
+        left: -100%;
+        width: 300px;
+        height: 100%;
+        min-height: 100vh;
+        background: var(--color-ui-1);
+        top: 0;
+        position: fixed;
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: flex-start;
+        z-index: 200;
+        transition: var(--transition);
+        padding-top: 20px;
+    }
+  
+    .navbar__container .tab__group.show {
+        left: 0;
+    }
+  
+    .menu {
+        display: block;
+    }
+
+    .close__btn {
+        display: flex;
+    }
+}
