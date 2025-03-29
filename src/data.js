@@ -120,11 +120,19 @@ export const projects = [
 
 export const experience = [
     {
-        title: "UI/UX",
+        title: "Tools",
         data: [
             {
-                skill: "Figma",
-                level: "Intermediate",
+                skill: "Git",
+                level:"Experienced",
+            },
+            {
+                skill: "Github Actions",
+                level:"Experienced",
+            },
+            {
+                skill: "VS Code",
+                level:"Experienced",
             },
         ],
     },
