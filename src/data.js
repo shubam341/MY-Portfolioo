@@ -197,6 +197,6 @@ export const socialHandles = [
     {
         name: "LinkedIn",
         icon: <AiFillLinkedin />,
-        link: "https://linkedin.com/in/your-profile",
+        link: "www.linkedin.com/in/shivam-ch-05a9182a0",
     },
 ];
