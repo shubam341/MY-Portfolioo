@@ -192,11 +192,11 @@ export const socialHandles = [
     {
         name: "Github",
         icon: <AiFillGithub />,
-        link: "https://github.com/your-profile",
+        link: "https://github.com/shubam341",
     },
     {
         name: "LinkedIn",
         icon: <AiFillLinkedin />,
-        link: "www.linkedin.com/in/shivam-ch-05a9182a0",
+        link: "https://www.linkedin.com/in/shivam-ch-05a9182a0/",
     },
 ];
