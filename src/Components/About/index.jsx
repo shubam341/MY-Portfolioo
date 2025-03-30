@@ -4,6 +4,8 @@ import {profile7} from "../../images"
 
 const About = () => {
     return ( 
+
+        
         <section id="about">
             <div className="section__wrapper about__container">
                 <div className="me__container blur-effect">
