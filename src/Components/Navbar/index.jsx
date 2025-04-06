@@ -87,15 +87,20 @@ useGSAP(()=>{
         ))}
       </div>
 
-      <div className="nav__buttons__group">
-        <button className="btn btn__primary">
-          Hire Me <FaArrowUpRightFromSquare className="btn__icon" />
-        </button>
-        <FaBarsStaggered 
-          className=" menu" 
-          onClick={() => setShowSidebar(true)} 
-        />
-      </div>
+     <div className="nav__buttons__group">
+  <a 
+    href="mailto:chshivam148@gmail.com" 
+    className="btn btn__primary"
+  >
+    Hire Me <FaArrowUpRightFromSquare className="btn__icon" />
+  </a>
+
+  <FaBarsStaggered 
+    className="menu" 
+    onClick={() => setShowSidebar(true)} 
+  />
+</div>
+
     </nav>
   );
 }
